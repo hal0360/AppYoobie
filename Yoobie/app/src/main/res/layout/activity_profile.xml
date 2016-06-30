@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#87CEEB"
+    tools:context="udenconstruction.yoobie.ProfileActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86">
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/profileEmailText"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:id="@+id/UnderLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileEmailText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgName"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconname"
+                android:layout_below="@+id/UnderLine"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Name"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/UnderLine"
+                android:layout_toRightOf="@+id/imgName"
+                android:layout_toEndOf="@+id/imgName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileName"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/UnderLine"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/profileDob"
+                android:layout_alignStart="@+id/profileDob" />
+
+            <View
+                android:id="@+id/UnderLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgMobile"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconname"
+                android:layout_below="@+id/UnderLine2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Mobile"
+                android:id="@+id/textView5"
+                android:layout_alignBottom="@+id/imgMobile"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileMobile"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/UnderLine2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/profileEmailText"
+                android:layout_toEndOf="@+id/profileEmailText"
+                android:layout_alignLeft="@+id/profileDob"
+                android:layout_alignStart="@+id/profileDob" />
+
+            <View
+                android:id="@+id/UnderLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileMobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgDob"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icondob"
+                android:layout_below="@+id/UnderLine3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Date of Birth"
+                android:id="@+id/textView6"
+                android:layout_alignBottom="@+id/imgDob"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileDob"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/UnderLine3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6" />
+
+            <View
+                android:id="@+id/UnderLine4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileDob"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgCountry"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconlocation"
+                android:layout_below="@+id/UnderLine4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Location"
+                android:id="@+id/textView7"
+                android:layout_alignBottom="@+id/imgCountry"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileLocation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/UnderLine4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/profileDob"
+                android:layout_alignStart="@+id/profileDob" />
+
+            <View
+                android:id="@+id/UnderLine5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileLocation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgGender"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icongender"
+                android:layout_below="@+id/UnderLine5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+            <View
+                android:id="@+id/UnderLine6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#FAEBD7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Gender"
+                android:id="@+id/textView12"
+                android:layout_alignBottom="@+id/imgGender"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium"
+                android:id="@+id/profileGender"
+                android:layout_alignTop="@+id/textView12"
+                android:layout_alignLeft="@+id/profileLocation"
+                android:layout_alignStart="@+id/profileLocation" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:onClick="backToMenu"
+        android:textAllCaps="false"
+        android:text="Back to Menu"
+        android:textColor="#FAEBD7"
+        android:background="@drawable/mybutton2"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/BackMenuButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="udenconstruction.yoobie.LoginFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:text="Login with Facebook"
+        android:textColor="#FAEBD7"
+        android:background="@drawable/mybutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/faceBookButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textColor="#FAEBD7"
+        android:textAllCaps="false"
+        android:text="Login"
+        android:background="@drawable/mybutton2"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/LoginButton"
+        android:layout_above="@+id/faceBookButton"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/editLogMail"
+                android:hint="Email address"
+                android:background="@null"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgMailLog"
+                android:layout_toEndOf="@+id/imgMailLog"/>
+
+            <View
+                android:id="@+id/UnderLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editLogMail"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="Password"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:id="@+id/editLogPass"
+                android:layout_below="@+id/UnderLine"
+                android:layout_toRightOf="@+id/imgPassLog"
+                android:layout_toEndOf="@+id/imgPassLog" />
+
+            <View
+                android:id="@+id/UnderLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editLogPass"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:src="@drawable/iconemail"
+                android:id="@+id/imgMailLog"
+                android:layout_marginTop="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:src="@drawable/iconpassword"
+                android:id="@+id/imgPassLog"
+                android:layout_below="@+id/UnderLine"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/textWarning"
+                android:textSize="16sp"
+                android:textColor="#FF0000"
+                android:layout_below="@+id/UnderLine2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Forgot Password?"
+                android:visibility="gone"
+                android:id="@+id/textForget"
+                android:textStyle="bold"
+                android:layout_below="@+id/textWarning"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Are you new here? Sign Up"
+        android:id="@+id/textSignup"
+        android:layout_above="@+id/LoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

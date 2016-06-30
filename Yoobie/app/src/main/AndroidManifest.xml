@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="udenconstruction.yoobie" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TermActivity"
+            android:label="@string/title_activity_term"
+            android:screenOrientation="portrait"
+            android:theme="@style/TermTheme" >
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".YoobieService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".allTools.InternetService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".allTools.CheckReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".allTools.UpdateReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="yoobieSendStamp" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ControlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".ProfileActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

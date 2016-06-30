@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="udenconstruction.yoobie.ForgotFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:text="Login with Facebook"
+        android:textColor="#FAEBD7"
+        android:background="@drawable/mybutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/faceBookButton3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textColor="#FAEBD7"
+        android:textAllCaps="false"
+        android:text="Reset Password"
+        android:background="@drawable/mybutton2"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/resetButton"
+        android:layout_above="@+id/faceBookButton3"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/editResetMail"
+                android:hint="Your Email address"
+                android:background="@null"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imgMailReset"
+                android:layout_toEndOf="@+id/imgMailReset"/>
+
+            <View
+                android:id="@+id/UnderLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editResetMail"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:src="@drawable/iconemail"
+                android:id="@+id/imgMailReset"
+                android:layout_marginTop="13dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Don't have an account? Sign up"
+        android:id="@+id/textResetSignup"
+        android:layout_above="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:textColor="#FF0000"
+        android:id="@+id/resetWarn"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+</RelativeLayout>

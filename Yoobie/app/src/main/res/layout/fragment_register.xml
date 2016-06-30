@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="udenconstruction.yoobie.RegisterFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:text="Login with Facebook"
+        android:textColor="#FAEBD7"
+        android:background="@drawable/mybutton"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/faceBookButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="24sp"
+        android:textColor="#FAEBD7"
+        android:textAllCaps="false"
+        android:text="Create Account"
+        android:background="@drawable/mybutton2"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/AccountButton"
+        android:layout_above="@+id/faceBookButton2"
+        android:layout_centerHorizontal="true"
+        tools:targetApi="honeycomb" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgMailReg"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/iconemail"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:hint="Email address"
+                android:background="@null"
+                android:id="@+id/editRegMail"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imgMailReg"
+                android:layout_toEndOf="@+id/imgMailReg" />
+
+            <View
+                android:id="@+id/UnderLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editRegMail"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgMailPass"
+                android:src="@drawable/iconpassword"
+                android:layout_below="@+id/UnderLine2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:hint="New Password"
+                android:id="@+id/editRegPass"
+                android:layout_below="@+id/UnderLine2"
+                android:layout_alignRight="@+id/editRegMail"
+                android:layout_alignEnd="@+id/editRegMail"
+                android:layout_toRightOf="@+id/imgMailPass"
+                android:layout_toEndOf="@+id/imgMailPass" />
+
+            <View
+                android:id="@+id/UnderLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editRegPass"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+            <ImageView
+                android:contentDescription="@string/imgDes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgMailPass2"
+                android:src="@drawable/iconpassword"
+                android:layout_below="@+id/UnderLine3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:hint="Varify Password"
+                android:id="@+id/editRegPass2"
+                android:layout_below="@+id/UnderLine3"
+                android:layout_alignRight="@+id/editRegMail"
+                android:layout_alignEnd="@+id/editRegMail"
+                android:layout_toRightOf="@+id/imgMailPass"
+                android:layout_toEndOf="@+id/imgMailPass" />
+
+            <View
+                android:id="@+id/UnderLine4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editRegPass2"
+                android:layout_centerHorizontal="true"
+                android:background="#FAEBD7" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the Terms and Conditions"
+                android:id="@+id/termCond"
+                android:layout_below="@+id/UnderLine4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
